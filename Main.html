@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<!--<link href="quoteGenerator.css" rel="stylesheet" type="text/css">-->
 	<script src="https://codeorigin.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
 	</script>
@@ -13,11 +12,21 @@
     <title>Joke Generator</title>
 </head>
 <body>
-    	<div class="container jumbotron">
-    	    <script  type="text/javascript" src="./quoteAPI.js"></script>
-    		<p id="joke-text"></p>
-   			<button type="button" class="btn btn-primary" id="quoteButton"onclick="getJoke()">New Quote</button>
-     </div>
- 
+		<div class="container jumbotron">
+			<form id = "jokeGenerator">
+				<div id="jokeHolder">
+					
+				</div>
+				<button type="submit" class="btn btn-primary" id="quoteButton">New Quote</button>
+				<div id ="tweetButton"  target="_blank">
+					<a class="btn btn-social-icon btn-twitter" id="tweetLink" target="_blank"
+					  href="https://twitter.com/intent/tweet?text=">
+					Tweet</a>
+				</div>
+			</form>
+    	
+   		
+    	</div>
+ 	<script  type="text/javascript" src="./jokeGeneratorAPI.js"></script>
 </body>
 </html>
